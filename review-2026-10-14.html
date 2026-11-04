@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>小鹿学习屋 · 2026年10月14日三科复习</title>
+<style>
+:root{--ink:#243e35;--green:#356749;--cream:#faf6e9;--paper:#fffdf7;--pale:#edf1e2;--gold:#d6a64b;--line:#dfe4d4}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:"PingFang SC",system-ui,sans-serif}
+button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #d79434;outline-offset:3px}
+main{max-width:1040px;margin:auto;padding:24px}.top{display:flex;justify-content:space-between;gap:14px;align-items:center}.brand{font-weight:850;font-size:21px}.draft{background:#f4dfb5;border-radius:999px;padding:8px 13px;font-size:13px}
+header{padding:36px 0 24px}h1{font-size:clamp(34px,6vw,56px);margin:8px 0}header p{color:#667363;line-height:1.8}.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}.summary div{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px}.summary strong{display:block;font-size:24px;color:var(--green)}
+.day-brief{background:linear-gradient(135deg,#eaf1df,#f8edd3);border:1px solid #d9dfc9;border-radius:22px;padding:22px;margin:18px 0}.day-brief h2{font-size:23px}.brief-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.brief-grid div{background:#fff9;border-radius:14px;padding:14px;line-height:1.7}.brief-grid strong{display:block;margin-bottom:4px}
+.archive-nav{display:flex;gap:9px;flex-wrap:wrap;margin:20px 0}.archive-nav a{color:var(--ink);text-decoration:none;border:1px solid #bdc9ad;border-radius:999px;padding:9px 13px;background:var(--paper)}.archive-nav a.active{background:var(--green);color:white;border-color:var(--green)}.tabs{display:flex;gap:10px;flex-wrap:wrap;position:sticky;top:0;background:var(--cream);padding:12px 0;z-index:2}.tab{border:1px solid #bdc9ad;background:var(--paper);border-radius:999px;padding:11px 18px;color:var(--ink)}.tab[aria-selected="true"]{background:var(--green);color:white;border-color:var(--green)}
+.lesson{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:26px;margin:12px 0}.lesson[hidden]{display:none}h2{font-size:29px;margin:0 0 8px}h3{margin-top:0}.meta{color:#687565;font-size:13px}.teacher{background:var(--pale);border-radius:15px;padding:17px;margin:18px 0}summary{font-weight:750;cursor:pointer}.original{white-space:pre-wrap;line-height:1.85;font-size:14px;margin-top:14px}.notice{border-left:3px solid var(--gold);padding:9px 14px;color:#696954;line-height:1.7}
+.activity{border-top:1px dashed #cad4bf;padding:22px 0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card{border:1px solid var(--line);background:white;border-radius:15px;padding:18px;text-align:center;min-height:95px;color:var(--ink)}.card strong{display:block;font-size:28px;margin-bottom:5px}.card span{display:none;line-height:1.6}.card.open span{display:block}.card.open small{display:none}.check{display:flex;gap:10px;line-height:1.7;margin:12px 0}.check input{width:22px;height:22px;accent-color:var(--green);flex:0 0 auto}
+.sort-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.sort-item{background:#f4f0df;border-radius:14px;padding:14px}.sort-item label{display:block;font-weight:700;margin-bottom:8px}.sort-item select{width:100%;padding:9px;border:1px solid #bdc9ad;border-radius:10px;background:white}.actions{display:flex;gap:10px;flex-wrap:wrap;margin:15px 0}.btn{border:0;border-radius:999px;padding:11px 18px;background:var(--green);color:white}.btn.light{background:var(--pale);color:var(--ink)}.feedback{min-height:28px;color:var(--green);line-height:1.7}
+.frames{background:#f4f0df;border-radius:15px;padding:18px;line-height:2;font-size:18px}.frames input{width:170px;max-width:42vw;padding:7px 9px;border:1px solid #afbd9f;border-radius:8px}.answer{background:#f6ecd6;border-radius:14px;padding:15px;line-height:1.8}.footer{text-align:center;color:#75816c;font-size:12px;padding:30px 0}[hidden]{display:none!important}
+.extension{background:#f7f1df;border:1px solid #e2d4af;border-radius:16px;padding:17px;margin-top:16px;line-height:1.75}.media-card{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:24px;margin:20px 0}.media-card video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;border-radius:16px;background:#17221d;margin-top:14px}.file-label{display:inline-block;border-radius:999px;padding:11px 18px;background:var(--green);color:white;cursor:pointer}.file-label input{position:absolute;opacity:0;pointer-events:none}.media-status{color:#687565;line-height:1.7;margin:12px 0}
+.adventure{background:linear-gradient(140deg,#fff4ce,#f0e8ff);border:2px solid #e0c878;border-radius:26px;padding:25px;margin:22px 0}.adventure-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.star-box{background:#fff;border-radius:999px;padding:10px 15px;font-weight:800;color:#805a00}.mission-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}.mission{background:#fff;border:1px solid #e2d9be;border-radius:20px;padding:19px;box-shadow:0 5px 0 #eadcad}.mission h3{font-size:20px}.choice-row{display:flex;gap:8px;flex-wrap:wrap;margin:13px 0}.choice{border:2px solid #c6d2ba;background:#fff;border-radius:14px;padding:10px 14px;font-weight:800;color:var(--ink)}.choice:hover{transform:translateY(-1px);border-color:var(--green)}.mission input{width:100%;padding:11px;border:2px solid #c6d2ba;border-radius:12px}.mission .feedback{font-weight:750}.mission.done{border-color:#76a75e;box-shadow:0 5px 0 #b8d5a7}.mission.done .feedback{color:#28755a}.optional-tag{display:inline-block;background:#7e5c9d;color:#fff;border-radius:999px;padding:6px 11px;font-size:13px}
+@media(max-width:800px){.mission-grid{grid-template-columns:1fr}.media-card{padding:16px}}
+@media(max-width:680px){main{padding:16px}.summary{grid-template-columns:repeat(2,1fr)}.brief-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.sort-grid{grid-template-columns:1fr}.lesson{padding:20px}.media-card video{border-radius:11px}}
+@media print{.tabs,.actions,.draft{display:none}.lesson{display:block!important;break-inside:avoid}details .original{display:block}}
+</style></head><body><main>
+<div class="top"><div class="brand">🦌 小鹿学习屋</div><span class="draft">三科已核对 · 2026.10.14</span></div>
+<nav class="archive-nav" aria-label="历史资料">
+<a class="active" href="review-2026-10-14.html">10.14 三科复习</a>
+<a href="math-2026-11-02.html">11.02 数学</a>
+<a href="english-2026-11-02.html">11.02 英语</a>
+<a href="chinese-undated.html">语文园地三</a>
+</nav><header><div class="meta">2026年10月14日 · 北京时间归档 · 三科已人工核对</div><h1>今天的 12 分钟小复习</h1><p>每科约4分钟。先按老师要求完成，再做一小步补充；不追求速度，也不补写尚未取得的课本内容。</p></header>
+<section class="summary" aria-label="今日安排"><div><strong>3科</strong>语文 · 数学 · 英语</div><div><strong>12分钟</strong>建议总时长</div><div><strong>P32—33</strong>语文指读</div><div><strong>P35</strong>英语听读</div></section>
+<section class="day-brief"><h2>今日学习总结</h2><div class="brief-grid"><div><strong>📖 语文</strong>认识 g、k、h，复习二拼和三拼；重点是音、形、气流与指读。</div><div><strong>🧺 数学</strong>学习“分类”：找到共同特点，把同类物品放在一起，并说出理由。</div><div><strong>🎒 英语</strong>复习 Unit 4 school things，通过 P35 故事听读和句型对话练习表达。</div></div><p class="meta">建议路线：回忆1分钟 → 三科练习约12分钟 → 用一句话说“今天我会了什么”。以下总结来自三条已人工核对通知；教材缺失处保持待确认。</p></section>
+<nav class="tabs" aria-label="选择科目"><button class="tab" data-tab="chinese" aria-selected="true">📖 语文 · 4分钟</button><button class="tab" data-tab="math" aria-selected="false">🧺 数学 · 4分钟</button><button class="tab" data-tab="english" aria-selected="false">🎒 英语 · 4分钟</button></nav>
+
+<article class="lesson" data-panel="chinese"><h2>📖 g、k、h</h2><p class="meta">老师要求：记音形口诀，拼读语文书 P32—33，复习二拼与三拼。</p>
+<details class="teacher"><summary>查看已人工核对的老师原始通知</summary><div class="original">10.14语文回家建议💗
+今天我们学习了《gkh》一二课时。认读了gkh三个声母及其二拼、三拼音节。
+1️⃣记一记：
+音：
+白鸽白鸽g g g
+蝌蚪蝌蚪k k k
+喝水喝水h h h
+
+形：
+9字加勾g g g
+一挺机枪k k k
+一把椅子h h h
+
+气流：
+气流最弱g g g
+气流最强k k k
+气流适中h h h
+
+2⃣️读一读：
+⭐️练习拼读语文书P32-33页《gkh》
+⭐️三拼音节拼读规则：
+声轻介快韵母响，
+三音连读很顺畅。</div></details>
+<div class="notice">未取得 P32—33 教材页面。网页不补写课本音节，只提示孩子打开实物课本指读。</div>
+<section class="activity"><h3>1. 点一点，记口诀 · 1分钟</h3><div class="cards"><button class="card"><strong>g</strong><small>点开提示</small><span>白鸽白鸽 g g g<br>9字加勾 g g g<br>气流最弱</span></button><button class="card"><strong>k</strong><small>点开提示</small><span>蝌蚪蝌蚪 k k k<br>一挺机枪 k k k<br>气流最强</span></button><button class="card"><strong>h</strong><small>点开提示</small><span>喝水喝水 h h h<br>一把椅子 h h h<br>气流适中</span></button></div></section>
+<section class="activity"><h3>2. 打开课本指读 · 3分钟</h3><label class="check"><input type="checkbox" data-save="cn-page">我指读了 P32—33 的字母和音节。</label><label class="check"><input type="checkbox" data-save="cn-rule">我读出了规则：“声轻介快韵母响，三音连读很顺畅。”</label><details class="answer"><summary>家长参考</summary><p>只核对老师原文里的三点：g/k/h 的音与形、气流强弱，以及孩子是否指着实物课本读。课本具体音节以 P32—33 实页为准。</p></details><div class="extension"><strong>可选拓展 · 气流小实验</strong><br>拿一小条轻薄纸放在嘴前，分别读 g、k、h，观察纸条变化，再用“弱、强、适中”描述感受。此活动依据老师的气流提示设计，不替代课堂发音示范。</div></section></article>
+
+<article class="lesson" data-panel="math" hidden><h2>🧺 整理房间</h2><p class="meta">老师要求：认识分类，把具有相同特点的物品放在一起；可整理房间或书包。</p>
+<details class="teacher"><summary>查看已人工核对的老师原始通知</summary><div class="original">🌸（10.14）今日数学
+      我们学习了数学书43-44页《整理房间》。认识分类是把具有相同特点的物品放在一起的过程，感受分类的好处。
+
+✅今日在校完成：
+1、计算练习2。（已经发给孩子们了）
+
+✨课后学习建议：
+1.运用分类的知识，整理一下自己的房间或者书包。
+2.回家可以鼓励孩子多表达，讲一讲数学书练习题。</div></details>
+<div class="notice">下面是网页补充练习，不是数学书 P43—44 原图。课本练习仍以实物书为准。</div>
+<section class="activity"><h3>把物品送回家 · 2分钟</h3><div class="sort-grid" id="sortGrid">
+<div class="sort-item"><label>✏️ 铅笔</label><select data-answer="学习用品"><option value="">选一类</option><option>学习用品</option><option>衣物</option><option>食物</option></select></div>
+<div class="sort-item"><label>📕 图书</label><select data-answer="学习用品"><option value="">选一类</option><option>学习用品</option><option>衣物</option><option>食物</option></select></div>
+<div class="sort-item"><label>🧦 袜子</label><select data-answer="衣物"><option value="">选一类</option><option>学习用品</option><option>衣物</option><option>食物</option></select></div>
+<div class="sort-item"><label>👕 上衣</label><select data-answer="衣物"><option value="">选一类</option><option>学习用品</option><option>衣物</option><option>食物</option></select></div>
+<div class="sort-item"><label>🍎 苹果</label><select data-answer="食物"><option value="">选一类</option><option>学习用品</option><option>衣物</option><option>食物</option></select></div>
+<div class="sort-item"><label>🍌 香蕉</label><select data-answer="食物"><option value="">选一类</option><option>学习用品</option><option>衣物</option><option>食物</option></select></div></div>
+<div class="actions"><button class="btn" id="checkSort">检查分类</button><button class="btn light" id="resetSort">重新选择</button></div><div class="feedback" id="sortFeedback" aria-live="polite"></div></section>
+<section class="activity"><h3>离开屏幕整理一下 · 2分钟</h3><label class="check"><input type="checkbox" data-save="math-real">我把书包里同类物品放在了一起，并说出了分类理由。</label><details class="answer"><summary>家长参考答案</summary><p>补充练习：铅笔、图书属于学习用品；袜子、上衣属于衣物；苹果、香蕉属于食物。孩子若提出另一种合理且前后一致的分类方法，也可以请他说明理由。</p></details><div class="extension"><strong>可选拓展 · 换一个标准</strong><br>从家里选4件安全的小物品，先按用途分，再试着按颜色或大小分。家长只问：“这次的共同特点是什么？”</div></section></article>
+
+<article class="lesson" data-panel="english" hidden><h2>🎒 Unit 4 · school things</h2><p class="meta">老师要求：听音跟读 P35 “Let’s share”，并操练目标句型。</p>
+<details class="teacher"><summary>查看已人工核对的老师原始通知</summary><div class="original">❤️今日英语❤️10.14
+今天我们继续复习了《新启航一上》Unit4 school things的词汇以及故事，同时操练本课目标句型，进行对话练习。
+
+📖今日建议:
+1️⃣听一听，读一读📖
+❤️听音并跟读P35的故事“Let’s share”，声音洪亮，发音清晰，注意指读习惯哦！
+
+2️⃣练一练，说一说
+❤️巩固目标句型：
+-What’s in your schoolbag?
+- I have a/an ______.
+
+-Oh, my________.
+-Here’s a/an ____.
+-Let’s share the ____.
+-Thank you!</div></details>
+<div class="notice">尚未取得 P35 故事原文、音频和教材完整词表。网页不会补写故事，也不把示例冒充课本内容。</div>
+<section class="activity"><h3>1. 指着实物书听读 · 2分钟</h3><label class="check"><input type="checkbox" data-save="en-listen">我打开 P35，听音并指着文字跟读了一遍。</label></section>
+<section class="activity"><h3>2. 用已学单词说一说 · 2分钟</h3><p>从 P35 里选孩子已经学过的词，家长可代为输入；网页只保存本设备上的练习状态，不判断教材词是否正确。</p><div class="frames">
+<div>— What’s in your schoolbag?</div><div>— I have a/an <input aria-label="填入P35中已学物品词" placeholder="P35中的词">.</div><br>
+<div>— Oh, my <input aria-label="填入P35中已学物品词" placeholder="P35中的词">.</div><div>— Here’s a/an <input aria-label="填入P35中已学物品词" placeholder="P35中的词">.</div><div>— Let’s share the <input aria-label="填入P35中已学物品词" placeholder="P35中的词">.</div><div>— Thank you!</div></div>
+<label class="check"><input type="checkbox" data-save="en-speak">我不看网页，和大人完成了一轮对话。</label><details class="answer"><summary>家长参考</summary><p>核对重点是孩子能否用老师给出的句型完成问答。具体物品词、故事情节和发音以教材 P35 及配套音频为准；a/an 的选择若不确定，先标记待老师或教材确认。</p></details><div class="extension"><strong>可选拓展 · 书包寻物</strong><br>孩子从书包里拿出一种已经学过、且能在教材中确认英文名称的物品，再用老师给出的句型完成一轮真实对话。网页不预设词表。</div></section></article>
+
+<section class="adventure" aria-labelledby="adventureTitle"><div class="adventure-head"><div><span class="optional-tag">主任务后任选 1 个 · 约 2 分钟</span><h2 id="adventureTitle">🎡 趣味拓展乐园</h2><p>不是加量做题，而是换一种方式把今天学会的内容说出来、玩出来。</p></div><div class="star-box" aria-live="polite">⭐ 小鹿星星 <span id="starCount">0</span>/1</div></div>
+<div class="mission-grid">
+<article class="mission" id="airMission"><h3>🌬️ 纸条气流赛</h3><p>读 g、k、h 时，谁的气流最强？</p><div class="choice-row"><button class="choice" data-air="g">g</button><button class="choice" data-air="k">k</button><button class="choice" data-air="h">h</button></div><div class="feedback" aria-live="polite"></div></article>
+<article class="mission" id="ruleMission"><h3>🪄 分类变变变</h3><p>红积木、蓝积木、红纽扣，想让“红色”住在一起，要按什么分类？</p><div class="choice-row"><button class="choice" data-rule="用途">用途</button><button class="choice" data-rule="颜色">颜色</button><button class="choice" data-rule="大小">大小</button></div><div class="feedback" aria-live="polite"></div></article>
+<article class="mission" id="bagMission"><h3>🎒 书包秘密词</h3><p>从 P35 找一个已学物品词，输入后大声完成句子。</p><input id="bagWord" aria-label="从P35选择的物品词" placeholder="输入 P35 中确认过的词"><button class="btn" id="makeLine" style="margin-top:10px">生成对话卡</button><div class="feedback" id="bagFeedback" aria-live="polite"></div></article>
+</div><p class="meta">这三个游戏是本站补充拓展，不是课本原题。英语词只从实际课本选择；不确定时留空。</p></section>
+
+<section class="media-card"><h2>🎬 40秒趣味复习引导</h2>
+<p>新版使用完整 16:9 字幕画面和轻提示音，不再使用生硬的机器配音。孩子看完后任选一个“趣味拓展乐园”任务，真正开口或动手。</p>
+<video controls preload="metadata" poster="assets/review-2026-10-14-poster.png" aria-label="2026年10月14日三科复习微课">
+<source src="assets/review-2026-10-14.mp4" type="video/mp4">当前浏览器不支持视频播放。
+</video>
+<div class="extension"><strong>视频只是起点</strong><br>看完请回到上方“趣味拓展乐园”，任选一个任务领取小鹿星星；三科全部复习仍控制在 10—15 分钟。</div>
+<details class="answer"><summary>教材定位与内容边界</summary><p><strong>语文：</strong>统编版一年级上第三单元第5课《g k h》，P32—33页码来自老师通知。<br><strong>数学：</strong>北师大版2024一年级上第三单元《整理房间》，公开教学资料与P43—44及分类目标一致。<br><strong>英语：</strong>外研社官方教师用书确认《新启航英语一年级上册》Unit 4 School things；P35 “Let’s share”的故事全文仍未取得，因此视频只使用老师已确认的任务和句型。</p><p class="meta">核对资料：<a href="https://www.pep.com.cn/rjyc/kcjc/gjkc/tbjc/yw1s/" target="_blank" rel="noopener">人教社语文一年级上册</a> · <a href="https://jx.panqjy.cn/doc-17098488.html" target="_blank" rel="noopener">北师大版《整理房间》P43—44教学资料</a> · <a href="https://www.unischool.cn/c/2024-10-25/231541.shtml" target="_blank" rel="noopener">外研社 Unit 4 School things</a></p></details></section>
+
+<div class="actions"><a class="btn light" href="./" style="text-decoration:none">返回资料库</a><button class="btn light" id="print">打印复习资料</button><button class="btn light" id="clear">清除本设备打卡</button></div>
+<footer class="footer">小鹿学习屋 · 2026.10.14 三科复习 · 老师要求与补充练习分开呈现</footer>
+</main><script>
+const panels=[...document.querySelectorAll('[data-panel]')];document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-tab]').forEach(x=>x.setAttribute('aria-selected',String(x===b)));panels.forEach(p=>p.hidden=p.dataset.panel!==b.dataset.tab)});
+document.querySelectorAll('.card').forEach(b=>b.onclick=()=>b.classList.toggle('open'));
+const saveKey='deer:draft:2026-10-14:';const checks=[...document.querySelectorAll('[data-save]')];checks.forEach(c=>{try{c.checked=localStorage.getItem(saveKey+c.dataset.save)==='true'}catch(e){}c.onchange=()=>{try{localStorage.setItem(saveKey+c.dataset.save,String(c.checked))}catch(e){}}});
+document.getElementById('checkSort').onclick=()=>{const s=[...document.querySelectorAll('#sortGrid select')];const empty=s.filter(x=>!x.value).length,wrong=s.filter(x=>x.value&&x.value!==x.dataset.answer).length;document.getElementById('sortFeedback').textContent=empty?'还有'+empty+'件物品没有分类。':wrong?'有'+wrong+'件物品可以再想想：它和哪一组有相同特点？':'都分好啦！现在说一说每一组的共同特点。'};
+document.getElementById('resetSort').onclick=()=>{document.querySelectorAll('#sortGrid select').forEach(x=>x.value='');document.getElementById('sortFeedback').textContent=''};document.getElementById('print').onclick=()=>window.print();document.getElementById('clear').onclick=()=>{checks.forEach(c=>{c.checked=false;try{localStorage.removeItem(saveKey+c.dataset.save)}catch(e){}})};
+const missions=new Set();function finishMission(id,el,message){missions.add(id);el.classList.add('done');el.querySelector('.feedback').textContent=message;document.getElementById('starCount').textContent=missions.size?1:0}
+document.querySelectorAll('[data-air]').forEach(b=>b.onclick=()=>{const m=document.getElementById('airMission');if(b.dataset.air==='k')finishMission('air',m,'答对啦！k 的气流最强。拿小纸条试一试吧！');else m.querySelector('.feedback').textContent='再试一次：想想老师说的“最强”是哪一个。'});
+document.querySelectorAll('[data-rule]').forEach(b=>b.onclick=()=>{const m=document.getElementById('ruleMission');if(b.dataset.rule==='颜色')finishMission('rule',m,'答对啦！换一个分类标准，物品就会有新队伍。');else m.querySelector('.feedback').textContent='再看看题目：这次想让“红色”住在一起。'});
+document.getElementById('makeLine').onclick=()=>{const word=document.getElementById('bagWord').value.trim(),m=document.getElementById('bagMission');if(!word){m.querySelector('.feedback').textContent='先从 P35 找一个确认学过的词。';return}finishMission('bag',m,'What’s in your schoolbag? — I have a/an '+word+'. 现在请大声说出来！')};
+</script></body></html>
