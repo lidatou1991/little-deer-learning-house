@@ -18,7 +18,7 @@ header{padding:36px 0 24px}h1{font-size:clamp(34px,6vw,56px);margin:8px 0}header
 @media(max-width:800px){.mission-grid{grid-template-columns:1fr}.media-card{padding:16px}}
 @media(max-width:680px){main{padding:16px}.summary{grid-template-columns:repeat(2,1fr)}.brief-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.sort-grid{grid-template-columns:1fr}.lesson{padding:20px}.media-card video{border-radius:11px}}
 @media print{.tabs,.actions,.draft{display:none}.lesson{display:block!important;break-inside:avoid}details .original{display:block}}
-</style></head><body><main>
+</style><link rel="stylesheet" href="assets/site.css"></head><body><main>
 <div class="top"><div class="brand">🦌 小鹿学习屋</div><span class="draft">三科已核对 · 2026.10.14</span></div>
 <nav class="archive-nav" aria-label="历史资料">
 <a class="active" href="review-2026-10-14.html">10.14 三科复习</a>
@@ -130,4 +130,4 @@ const missions=new Set();function finishMission(id,el,message){missions.add(id);
 document.querySelectorAll('[data-air]').forEach(b=>b.onclick=()=>{const m=document.getElementById('airMission');if(b.dataset.air==='k')finishMission('air',m,'答对啦！k 的气流最强。拿小纸条试一试吧！');else m.querySelector('.feedback').textContent='再试一次：想想老师说的“最强”是哪一个。'});
 document.querySelectorAll('[data-rule]').forEach(b=>b.onclick=()=>{const m=document.getElementById('ruleMission');if(b.dataset.rule==='颜色')finishMission('rule',m,'答对啦！换一个分类标准，物品就会有新队伍。');else m.querySelector('.feedback').textContent='再看看题目：这次想让“红色”住在一起。'});
 document.getElementById('makeLine').onclick=()=>{const word=document.getElementById('bagWord').value.trim(),m=document.getElementById('bagMission');if(!word){m.querySelector('.feedback').textContent='先从 P35 找一个确认学过的词。';return}finishMission('bag',m,'What’s in your schoolbag? — I have a/an '+word+'. 现在请大声说出来！')};
-</script></body></html>
+</script><script src="assets/site-shell.js"></script></body></html>
